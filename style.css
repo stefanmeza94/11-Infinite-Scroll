@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 110vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.container .user {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+
+.user h3 {
+  margin: 0;
+}
