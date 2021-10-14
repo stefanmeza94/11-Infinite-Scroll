@@ -36,12 +36,12 @@ async function getUsers(url) {
   }
 };
 
-getUsers(`http://localhost:3001/api/users?page=${currentPage}&limit=20`);
+getUsers(`http://localhost:3001/api/users?page=${currentPage}&limit=4`);
 
 window.document.addEventListener('scroll', function() {
   const {scrollTop, scrollHeight, clientHeight} = document.documentElement;
   if (clientHeight + scrollTop >= scrollHeight) {
     currentPage++;
-    getUsers(`http://localhost:3001/api/users?page=${currentPage}&limit=20`);
+    getUsers(`http://localhost:3001/api/users?page=${currentPage}&limit=4`);
   }
 })
